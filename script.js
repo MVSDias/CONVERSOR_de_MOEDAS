@@ -26,10 +26,10 @@ function convertValues() {
     ".currency-value-converted"
   ) //guarda o valor convertido na constante (currencyValueConverted)
 
-  const dolarToday = 5.0
-  const euroToday = 5.4
-  const poundSterlingToday = 6.34
-  const bitcoinToday = 132726.14
+  const dolarToday = 4.94
+  const euroToday = 5.27
+  const poundSterlingToday = 6.04
+  const bitcoinToday = 182130.10
 
   const currencyIn = document.querySelector(".currency-in")// mapeio o elemento de moeda a converter
 
@@ -46,7 +46,7 @@ function convertValues() {
        
     
         currencyIn.innerHTML = "Real"
-        currencyLogoIn.src = "./Brasil-logo.png"
+        currencyLogoIn.src = "./images/Brasil-logo.png"
         currencyValueToConvert.innerHTML = new Intl.NumberFormat("pt-BR", {
           style: "currency",
           currency: "BRL",
@@ -60,7 +60,7 @@ function convertValues() {
             }).format(inputCurrencyValue * 1)
 
             currencyOut.innerHTML = "Real"
-            currencyLogoOut.src = "./Brasil-logo.png"
+            currencyLogoOut.src = "./images/Brasil-logo.png"
         } // converte e formata a apresentação, troca a logo e o nome da moeda
 
 
@@ -71,7 +71,7 @@ function convertValues() {
             }).format(inputCurrencyValue / dolarToday)
 
             currencyOut.innerHTML = "Dolar Americano"
-            currencyLogoOut.src = "./EUA-logo.png"
+            currencyLogoOut.src = "./images/EUA-logo.png"
         }
 
 
@@ -82,7 +82,7 @@ function convertValues() {
             }).format(inputCurrencyValue / euroToday)
 
             currencyOut.innerHTML = "€ Euro"
-            currencyLogoOut.src = "./euro-logo.png"
+            currencyLogoOut.src = "./images/euro-logo.png"
         } 
 
         if (currencySelect2.value == "libra") {
@@ -92,7 +92,7 @@ function convertValues() {
             }).format(inputCurrencyValue / poundSterlingToday)
             
             currencyOut.innerHTML = "£ Pounds"
-            currencyLogoOut.src = "./libra-logo.png"
+            currencyLogoOut.src = "./images/libra-logo.png"
         }
 
         if (currencySelect2.value == "bitcoin") {
@@ -103,7 +103,7 @@ function convertValues() {
             }).format(inputCurrencyValue / bitcoinToday)
 
             currencyOut.innerHTML = "₿ Bitcoin"
-            currencyLogoOut.src = "./bitcoin-logo.png"
+            currencyLogoOut.src = "./images/bitcoin-logo.png"
         }
 
   }
@@ -114,7 +114,7 @@ function convertValues() {
 
 
         currencyIn.innerHTML = "Dolar Americano"
-        currencyLogoIn.src = "./EUA-logo.png"
+        currencyLogoIn.src = "./images/EUA-logo.png"
         currencyValueToConvert.innerHTML = new Intl.NumberFormat("En-US", {
           style: "currency",
           currency: "USD",
@@ -128,7 +128,7 @@ function convertValues() {
             }).format(inputCurrencyValue * dolarToday)
 
             currencyOut.innerHTML = "Real"
-            currencyLogoOut.src = "./Brasil-logo.png"
+            currencyLogoOut.src = "./images/Brasil-logo.png"
         } // converte e formata a apresentação, troca a logo e o nome da moeda
 
 
@@ -139,7 +139,7 @@ function convertValues() {
             }).format(inputCurrencyValue * 1)
 
             currencyOut.innerHTML = "Dolar Americano"
-            currencyLogoOut.src = "./EUA-logo.png"
+            currencyLogoOut.src = "./images/EUA-logo.png"
         } 
 
 
@@ -150,7 +150,7 @@ function convertValues() {
             }).format(inputCurrencyValue * 0.92)
 
             currencyOut.innerHTML = "€ Euro"
-            currencyLogoOut.src = "./euro-logo.png"
+            currencyLogoOut.src = "./images/euro-logo.png"
         } 
 
 
@@ -161,7 +161,7 @@ function convertValues() {
             }).format(inputCurrencyValue * 0.79)
 
             currencyOut.innerHTML = "£ Pounds"
-            currencyLogoOut.src = "./libra-logo.png"
+            currencyLogoOut.src = "./images/libra-logo.png"
         } 
 
 
@@ -173,7 +173,7 @@ function convertValues() {
             }).format(inputCurrencyValue * 0.000038)
 
             currencyOut.innerHTML = "₿ Bitcoin"
-            currencyLogoOut.src = "./bitcoin-logo.png"
+            currencyLogoOut.src = "./images/bitcoin-logo.png"
         }
 
     // currencyValueToConvert.innerHTML = new Intl.NumberFormat("pt-BR", {
@@ -190,7 +190,7 @@ function convertValues() {
 
 
         currencyIn.innerHTML = "€ Euro"
-        currencyLogoIn.src = "./euro-logo.png"
+        currencyLogoIn.src = "./images/euro-logo.png"
         currencyValueToConvert.innerHTML = new Intl.NumberFormat("de-DE", {
           style: "currency",
           currency: "EUR",
@@ -203,7 +203,7 @@ function convertValues() {
             }).format(inputCurrencyValue * euroToday)
 
             currencyOut.innerHTML = "Real"
-            currencyLogoOut.src = "./Brasil-logo.png"
+            currencyLogoOut.src = "./images/Brasil-logo.png"
         } // converte e formata a apresentação, troca a logo e o nome da moeda
 
 
@@ -214,7 +214,7 @@ function convertValues() {
             }).format(inputCurrencyValue * 1.09)
 
             currencyOut.innerHTML = "Dolar Americano"
-            currencyLogoOut.src = "./EUA-logo.png"
+            currencyLogoOut.src = "./images/EUA-logo.png"
         }
 
 
@@ -225,7 +225,7 @@ function convertValues() {
             }).format(inputCurrencyValue * 1)
 
             currencyOut.innerHTML = "€ Euro"
-            currencyLogoOut.src = "./euro-logo.png"
+            currencyLogoOut.src = "./images/euro-logo.png"
         }
 
     
@@ -236,7 +236,7 @@ function convertValues() {
             }).format(inputCurrencyValue * 0.85)
 
             currencyOut.innerHTML = "£ Pounds"
-            currencyLogoOut.src = "./libra-logo.png"
+            currencyLogoOut.src = "./images/libra-logo.png"
         }
 
        
@@ -249,7 +249,7 @@ function convertValues() {
             }).format(inputCurrencyValue * 0.000041)
 
             currencyOut.innerHTML = "₿ Bitcoin"
-            currencyLogoOut.src = "./bitcoin-logo.png"
+            currencyLogoOut.src = "./images/bitcoin-logo.png"
         }
 
 
@@ -262,7 +262,7 @@ function convertValues() {
 
 
         currencyIn.innerHTML = "£ Pounds"
-        currencyLogoIn.src = "./libra-logo.png"
+        currencyLogoIn.src = "./images/libra-logo.png"
         currencyValueToConvert.innerHTML = new Intl.NumberFormat("en-UK", {
           style: "currency",
           currency: "GBP",
@@ -275,7 +275,7 @@ function convertValues() {
             }).format(inputCurrencyValue * poundSterlingToday)
 
             currencyOut.innerHTML = "Real"
-            currencyLogoOut.src = "./Brasil-logo.png"
+            currencyLogoOut.src = "./images/Brasil-logo.png"
         } //converte e formata a apresentação, troca a logo e o nome da moeda
 
 
@@ -286,7 +286,7 @@ function convertValues() {
             }).format(inputCurrencyValue * 1.27)
 
             currencyOut.innerHTML = "Dolar Americano"
-            currencyLogoOut.src = "./EUA-logo.png"
+            currencyLogoOut.src = "./images/EUA-logo.png"
         }
 
 
@@ -297,7 +297,7 @@ function convertValues() {
             }).format(inputCurrencyValue * 1.17)
 
             currencyOut.innerHTML = "€ Euro"
-            currencyLogoOut.src = "./euro-logo.png"
+            currencyLogoOut.src = "./images/euro-logo.png"
         }
 
 
@@ -308,7 +308,7 @@ function convertValues() {
             }).format(inputCurrencyValue * 1)
 
             currencyIn.innerHTML = "£ Pounds"
-            currencyLogoIn.src = "./libra-logo.png"
+            currencyLogoIn.src = "./images/libra-logo.png"
         }
 
         
@@ -320,7 +320,7 @@ function convertValues() {
             }).format(inputCurrencyValue * 0.000048)
 
             currencyOut.innerHTML = "₿ Bitcoin"
-            currencyLogoOut.src = "./bitcoin-logo.png"
+            currencyLogoOut.src = "./images/bitcoin-logo.png"
         }
 
 
@@ -334,7 +334,7 @@ function convertValues() {
 
 
         currencyIn.innerHTML = "₿ Bitcoin"
-        currencyLogoIn.src = "./bitcoin-logo.png"
+        currencyLogoIn.src = "./images/bitcoin-logo.png"
         currencyValueToConvert.innerHTML = new Intl.NumberFormat("Mundo", {
           style: "currency",
           currency: "BTC",
@@ -348,7 +348,7 @@ function convertValues() {
             }).format(inputCurrencyValue * bitcoinToday)
 
             currencyOut.innerHTML = "Real"
-            currencyLogoOut.src = "./Brasil-logo.png"
+            currencyLogoOut.src = "./images/Brasil-logo.png"
         } //converte e formata a apresentação, troca a logo e o nome da moeda
 
 
@@ -358,10 +358,10 @@ function convertValues() {
             style: "currency",
             currency: "USD",
             minimumSignificantDigits: 6//coloca numero de casas decimais
-            }).format(inputCurrencyValue * 1.27)
+            }).format(inputCurrencyValue * 36874.70)
 
             currencyOut.innerHTML = "Dolar Americano"
-            currencyLogoOut.src = "./EUA-logo.png"
+            currencyLogoOut.src = "./images/EUA-logo.png"
         }
 
 
@@ -370,10 +370,10 @@ function convertValues() {
             style: "currency",
             currency: "EUR", 
             minimumSignificantDigits: 6//coloca numero de casas decimais
-            }).format(inputCurrencyValue * 1.17)
+            }).format(inputCurrencyValue * 34545.51)
 
             currencyOut.innerHTML = "€ Euro"
-            currencyLogoOut.src = "./euro-logo.png"
+            currencyLogoOut.src = "./images/euro-logo.png"
         }
 
 
@@ -382,10 +382,10 @@ function convertValues() {
             style: "currency",
             currency: "GBP",
             minimumSignificantDigits: 6//coloca numero de casas decimais
-            }).format(inputCurrencyValue * 0.000048)
+            }).format(inputCurrencyValue * 30131.05)
 
             currencyIn.innerHTML = "£ Pounds"
-            currencyLogoIn.src = "./libra-logo.png"
+            currencyLogoIn.src = "./images/libra-logo.png"
         }
 
         
@@ -397,7 +397,7 @@ function convertValues() {
             }).format(inputCurrencyValue * 1)
 
             currencyOut.innerHTML = "₿ Bitcoin"
-            currencyLogoOut.src = "./bitcoin-logo.png"
+            currencyLogoOut.src = "./images/bitcoin-logo.png"
         }
 
 
