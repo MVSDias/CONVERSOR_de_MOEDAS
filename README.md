@@ -35,7 +35,7 @@ e a conversão toda feita em Javascript puro. Observe que os valores bases foram
 Mas logo estarei alterando o projeto para dar mais dinâmica e torná-lo totalmente funcional e prático. Como demonstração das skill o projeto foi]
 de grande valia. O que permitu fixar todos os conhecimentos aprendidos, e librar a criatividade ao usar um video de fundo.
 Mais um projeto concluído com sucesso do <a href="https://rodolfomori.com.br/devclub/"> DEVCLUB- RODOLFO MORI</a>
-- [Acesse o projeto finalizado, online](https://maykbrito.github.io/devlinks)
+- [Acesse o projeto finalizado, online]( https://mvsdias.github.io/CONVERSOR_de_MOEDAS/)
 
 
 
