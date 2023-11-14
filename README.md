@@ -29,12 +29,14 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 ## 💻 Projeto
 
-O projeto é um conversor de moedas com varias opções, desde dreal até bitcoin, permitindo converter entre elas. 
+O projeto é um conversor de moedas com varias opções, desde o Real até bitcoin, permitindo converter entre elas. 
 Foram usadas tecnologias, que permitiram a dinâmica do projeto. O video de fundo e o gift foram estilizados com css
-e a conversão toda feita em Javascript puro. Observe que os valores bases foram fixados na data da postagem. Não foi "consumida nenhuma api, por enquanto.
-Mas logo estarei alterando o projeto para dar mais dinâmica e torná-lo totalmente funcional e prático. Como demonstração das skill o projeto foi]
-de grande valia. O que permitu fixar todos os conhecimentos aprendidos, e librar a criatividade ao usar um video de fundo.
+e a conversão toda feita em Javascript puro. Foi feito o uso de uma api <a href="https://docs.awesomeapi.com.br/api-de-moedas"> "Api Moedas" </a>
+ para fazer a conversão com valores atualizados na hora do uso, tornado a aplicação totalmente funcional e profissional.
+Como demonstração das skill o projeto foi de grande valia. O que permitiu exercitar todos os conhecimentos adquiridos, e liberar a criatividade ao usar um video de fundo.
 Mais um projeto concluído com sucesso do <a href="https://rodolfomori.com.br/devclub/"> DEVCLUB- RODOLFO MORI</a>
+
+
 - [Acesse o projeto finalizado, online]( https://mvsdias.github.io/CONVERSOR_de_MOEDAS/)
 
 
