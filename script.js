@@ -12,9 +12,9 @@ const currencySelect2 = document.querySelector(".currency-select2") // trás a i
 
 convertButton.addEventListener("click", convertValues)
 
+// const convertValues = async ()=>{}
 
-
-function convertValues() {
+async function convertValues() {
 
 
   const inputCurrencyValue = document.querySelector(".input-currency").value // estou pegando especificamente o valor dentro do input
@@ -26,10 +26,13 @@ function convertValues() {
     ".currency-value-converted"
   ) //guarda o valor convertido na constante (currencyValueConverted)
 
-  const dolarToday = 4.94
-  const euroToday = 5.27
-  const poundSterlingToday = 6.04
-  const bitcoinToday = 182130.10
+  const data = await fetch('https://economia.awesomeapi.com.br/last/USD-BRL,EUR-BRL,BTC-BRL,GBP-BRL').then(response => response.json())//com o fetch consigo "consumir" a api moedas, e retornar para minha const data em formato json. O await faz o js "esperar" a requisição terminar, para depois continuar o codigo.
+  console.log(data)
+
+  const dolarToday = data.USDBRL.high
+  const euroToday = data.EURBRL.high
+  const poundSterlingToday = data.GBPBRL.high
+  const bitcoinToday = data.BTCBRL.high
 
   const currencyIn = document.querySelector(".currency-in")// mapeio o elemento de moeda a converter
 
@@ -344,7 +347,7 @@ function convertValues() {
             currencyValueConverted.innerHTML = new Intl.NumberFormat("pt-BR", {
             style: "currency",
             currency: "BRL",
-            minimumSignificantDigits: 6//coloca numero de casas decimais
+            minimumSignificantDigits: 8//coloca numero de casas decimais
             }).format(inputCurrencyValue * bitcoinToday)
 
             currencyOut.innerHTML = "Real"
